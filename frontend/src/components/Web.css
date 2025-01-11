@@ -1,0 +1,55 @@
+.web-call-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .toggle-call {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px;
+    font-size: 24px; /* Icon size */
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .toggle-call:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Slight zoom effect */
+  }
+  
+  .toggle-call.active {
+    background-color: #f44336; /* Red color for stop call */
+  }
+  
+  .toggle-call.active:hover {
+    background-color: #d32f2f;
+  }
+  
+  .icon {
+    margin: 0; /* Align the icon properly */
+  }
+  
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
